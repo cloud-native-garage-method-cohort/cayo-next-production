@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: b19c4159a545d8555c84b81ab7e01a391e8f627a
+    app.openshift.io/vcs-ref: dd2f9f9a14a4570ac6f3b04d4235a0b363c1c335
     app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/cayo-moraes-next
   labels:
     app.kubernetes.io/instance: cayo-next
@@ -22,7 +22,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: b19c4159a545d8555c84b81ab7e01a391e8f627a
+    app.openshift.io/vcs-ref: dd2f9f9a14a4570ac6f3b04d4235a0b363c1c335
     app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/cayo-moraes-next
   labels:
     app: cayo-next
@@ -39,7 +39,7 @@ spec:
   template:
     metadata:
       annotations:
-        app.openshift.io/vcs-ref: b19c4159a545d8555c84b81ab7e01a391e8f627a
+        app.openshift.io/vcs-ref: dd2f9f9a14a4570ac6f3b04d4235a0b363c1c335
         app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/cayo-moraes-next
       labels:
         app: cayo-next
@@ -47,7 +47,7 @@ spec:
         app.kubernetes.io/name: cayo-next
     spec:
       containers:
-      - image: quay.io/cayops/cayo-next:b19c4159a545d8555c84b81ab7e01a391e8f627a
+      - image: quay.io/cayops/cayo-next:dd2f9f9a14a4570ac6f3b04d4235a0b363c1c335
         name: nextjs
         ports:
         - containerPort: 3000
@@ -56,7 +56,7 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: b19c4159a545d8555c84b81ab7e01a391e8f627a
+    app.openshift.io/vcs-ref: dd2f9f9a14a4570ac6f3b04d4235a0b363c1c335
     app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/cayo-moraes-next
   labels:
     app.kubernetes.io/instance: cayo-next
